@@ -1,4 +1,4 @@
-![313991445-071a94f7-1c98-4cc5-aa51-da1084d64274](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/2b896d96-175f-455b-b8ea-1a5cca46dd00)# Implementation-of-filter
+# Implementation-of-filter
 ## Aim:
 To implement filters for smoothing and sharpening the images in the spatial domain.
 
@@ -83,8 +83,8 @@ plt.show()
 ```
 
 iv) Using Median Filter
-```
 
+```
 median=cv2.medianBlur(image2,13)
 plt.figure(figsize=(9,9))
 plt.subplot(1,2,1)
@@ -96,10 +96,6 @@ plt.imshow(median)
 plt.title("Median Blur")
 plt.axis("off")
 plt.show()
-
-
-
-
 ```
 
 ### 2. Sharpening Filters
@@ -121,8 +117,6 @@ plt.show()
 ```
 ii) Using Laplacian Operator
 ```
-
-
 laplacian=cv2.Laplacian(image2,cv2.CV_64F)
 plt.figure(figsize=(9,9))
 plt.subplot(1,2,1)
@@ -134,26 +128,31 @@ plt.imshow(laplacian)
 plt.title("Laplacian Operator")
 plt.axis("off")
 plt.show()
-
-
-
 ```
 
 ## OUTPUT:
 ### 1. Smoothing Filters
 
 i) Using Averaging Filter
+
 ![313991445-071a94f7-1c98-4cc5-aa51-da1084d64274](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/330176b4-1edc-44a1-ad28-9574c7c0d8f6)
+
 ii) Using Weighted Averaging Filter
+
 ![313991488-4ebdd6e6-e027-41da-a476-6ddf2cf3d51f](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/8ebd704c-0a2d-4df1-8da0-90179b642d7d)
+
 iii) Using Gaussian Filter
+
 ![313991523-59b7b210-b6d9-4631-9991-94c2c99e090b](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/cc8cc40f-760c-4ede-a846-1601c0c7acb7)
+
 iv) Using Median Filter
+
 ![313991549-96f13828-7803-4313-ba03-a813f355ef9a](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/962e17bf-31d6-4edd-aae5-d40a0b1fe823)
 
 ### 2. Sharpening Filters
 
 i) Using Laplacian Kernal
+
 ![313991601-a148ef5c-5076-4c92-bf00-33f3dbece1d0](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/9e1a386f-a577-45b2-9987-a0e84f52658d)
 
 ii) Using Laplacian Operator
