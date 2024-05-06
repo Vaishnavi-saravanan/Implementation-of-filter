@@ -26,7 +26,7 @@ Register Number: 212222230165
 ### 1. Smoothing Filters
 
 i) Using Averaging Filter
-```Python
+```
 
 import cv2
 import matplotlib.pyplot as plt
@@ -48,7 +48,7 @@ plt.show()
 
 ```
 ii) Using Weighted Averaging Filter
-```Python
+```
 kernel1=np.array([[1,2,1],[2,4,2],[1,2,1]])/16
 image3=cv2.filter2D(image2,-1,kernel1)
 plt.figure(figsize=(9,9))
@@ -62,13 +62,9 @@ plt.title("Weighted Average Filter Image")
 plt.axis("off")
 plt.show()
 
-
-
-
-
 ```
 iii) Using Gaussian Filter
-```Python
+```
 
 gaussian_blur=cv2.GaussianBlur(image2,(33,33),0,0)
 plt.figure(figsize=(9,9))
@@ -87,7 +83,7 @@ plt.show()
 ```
 
 iv) Using Median Filter
-```Python
+```
 
 median=cv2.medianBlur(image2,13)
 plt.figure(figsize=(9,9))
@@ -108,8 +104,7 @@ plt.show()
 
 ### 2. Sharpening Filters
 i) Using Laplacian Kernal
-```Python
-
+```
 kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
 image3=cv2.filter2D(image2,-1,kernel2)
 plt.figure(figsize=(9,9))
@@ -123,12 +118,9 @@ plt.title("Laplacian Kernel")
 plt.axis("off")
 plt.show()
 
-
-
-
 ```
 ii) Using Laplacian Operator
-```Python
+```
 
 
 laplacian=cv2.Laplacian(image2,cv2.CV_64F)
@@ -149,7 +141,6 @@ plt.show()
 
 ## OUTPUT:
 ### 1. Smoothing Filters
-</br>
 
 i) Using Averaging Filter
 ![313991445-071a94f7-1c98-4cc5-aa51-da1084d64274](https://github.com/Vaishnavi-saravanan/Implementation-of-filter/assets/118541897/330176b4-1edc-44a1-ad28-9574c7c0d8f6)
